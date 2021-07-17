@@ -1,0 +1,148 @@
+@media screen and (max-width: 690px) {
+    .hide_on_mobile {display: none !important}
+    .opacity {opacity: 25%}
+    body {
+        .hide_on_med_and_up {display: block}
+        #app {
+            .main {
+                padding: 0 24px;
+                h1 {font-size: 40px; line-height: 52px;}
+                h2 {font-size: 20px; line-height: 26px; letter-spacing: -0.9px;}
+                h3 {line-height: 10px; letter-spacing: 1.93px; width: 80px; text-align: center;}
+                h4 {font-size: 8px; line-height: 16px; letter-spacing: -0.75px;}
+                header .nav-wrapper {
+                    position: absolute; top: 0; right: 0; left: 0; width: 100%; height: 68px; justify-content: space-between; align-items: center; padding: 0 24px;
+                    .logo {margin: 16px 0 17px 0; width: 109px; text-align: left;}
+                    .mobile_nav_trigger {
+                        display: flex; order: 2;
+                        img {
+                            margin: auto
+                        }
+                    }
+                    nav ul.responsive {
+                        display: block !important; height: auto; width: 100%; z-index: 99; background-color: $dark; position: absolute; top: 68px; left: 0; padding-top: 24px;
+                        li {
+                            display: flex; align-items: center; padding: 20px 32px 20px 24px; height: 65px;
+                            .planet_dot {height: 20px; width: 20px; border-radius: 50%; }
+                            .icon_chevron {height: 10px; width: 6px; opacity: 40%; transition: all .5s}
+                            #mercury_dot {background: #DEF4FC;}
+                            #venus_dot {background: #F7CC7F;}
+                            #earth_dot {background: #545BFE;}
+                            #mars_dot {background: #FF6A45;}
+                            #jupiter_dot {background: #ECAD7A;}
+                            #saturn_dot {background: #FCCB6B;}
+                            #uranus_dot {background: #65F0D5;}
+                            #neptune_dot {background: #497EFA;}
+                            a {width: 100%; border: none; font-size: 15px; line-height: 25px; letter-spacing: 1.36px; display: flex; justify-content: space-between; align-items: center; padding-left: 25px;}
+                            a:hover img.hide_on_med_and_up.icon_chevron, .router-link-active.router-link-exact-active .icon_chevron {opacity: 1; margin-right: 77%;}
+                            a::after, .router-link-active.router-link-exact-active::after {background-color: transparent}
+                        }
+                        li:not(:first-child) {border-top: 1px $lightGrey solid}
+                    }
+                }
+                .content .section {
+                    padding: 0;
+                    .description {width: 100%;}
+                    .planet_infos {
+                        flex-direction: column; text-align: center;
+                        .buttons {width: 100%; position: absolute; top: 68px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 24px; border-bottom: solid 1px $lightGrey}
+                        #text {padding-top: 16px}
+                        .source {justify-content: center;}
+                        .btn {padding: 20px 0; border: none; position: relative; opacity: 50%;}
+                        .btn:not(:first-child) {margin: 0 0 0 44px}
+                        .btn:hover {background: transparent;  opacity: 1}
+                        .btn::after, .btn.active::after, #mercury .btn.active::after, #venus .btn.active::after, #earth .btn.active::after, #mars .btn.active::after, #saturn .btn.active::after, #jupiter .btn.active::after, #uranus .btn.active::after, #neptune .btn.active::after {
+                            content: ''; 
+                            position: absolute; 
+                            bottom: 0; 
+                            left: 0; 
+                            right: 0; 
+                            width: 100%; 
+                            margin: 0 auto; 
+                            height: 4px; 
+                            opacity: 0; 
+                            -webkit-transition: opacity 500ms, -webkit-transform 500ms; 
+                            transition: opacity 500ms, -webkit-transform 500ms; 
+                            -o-transition: opacity 500ms, transform 500ms; 
+                            transition: opacity 500ms, transform 500ms; 
+                            transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+                        }
+                        .btn:hover::after, .btn.active::after, #mercury .btn.active::after, #venus .btn.active::after, #earth .btn.active::after, #mars .btn.active::after, #saturn .btn.active::after, #jupiter .btn.active::after, #uranus .btn.active::after, #neptune .btn.active::after {
+                            opacity: 1; 
+                            -webkit-transform: translate3d(0, 0.2em, 0); 
+                            transform: translate3d(0, 0.2em, 0);
+                        }
+                        .btn::after, .btn.active::after, #mercury .btn.active::after, #venus .btn.active::after, #earth .btn.active::after, #mars .btn.active::after, #saturn .btn.active::after, #jupiter .btn.active::after, #uranus .btn.active::after, #neptune .btn.active::after {opacity: 1; 
+                            -webkit-transform: scale(0); 
+                            -ms-transform: scale(0); 
+                            transform: scale(0); 
+                            -webkit-transform-origin: center; 
+                            -ms-transform-origin: center; 
+                            transform-origin: center;
+                        }
+                        .btn:hover::after, .btn.active::after, #mercury .btn.active::after, #venus .btn.active::after, #earth .btn.active::after, #mars .btn.active::after, #saturn .btn.active::after, #jupiter .btn.active::after, #uranus .btn.active::after, #neptune .btn.active::after {
+                            -webkit-transform: scale(1);
+                            -ms-transform: scale(1);
+                            transform: scale(1);
+                        }
+                    }
+                    .planet_img #geology_image {width: 80px}
+                    .numbers.row {
+                        flex-direction: column; margin-top: 28px; margin-bottom: 47px;
+                        .stats {width: 100%; margin: 0 5px; display: flex; justify-content: space-between; align-items: center; padding: 9px 24px 13px 24px}
+                        .stats:not(:first-child) {margin-top: 8px}
+                    }
+                }
+                #mercury .btn.active, #venus .btn.active, #earth .btn.active, #mars .btn.active, #saturn .btn.active, #jupiter .btn.active, #uranus .btn.active, #neptune .btn.active {background-color: transparent; opacity: 1}
+                #mercury {
+                    margin-top: 215px;
+                    .planet_img {margin-bottom: 98px;}
+                    .images {width: 111px; height: 111px;}
+                    .btn:hover::after, .btn.active::after {background-color: $cyan;}
+                }
+                #venus {
+                    margin-top: 194px;
+                    .planet_img {margin-bottom: 76px;}
+                    .images {width: 154px; height: 154px;}
+                    .btn:hover::after, .btn.active::after {background-color: $yellow;}
+                }
+                #earth {
+                    margin-top: 184px;
+                    .planet_img {margin-bottom: 67px;}
+                    .images {width: 173px; height: 173px;}
+                    .btn:hover::after, .btn.active::after {background-color: $purple;}
+                }
+                #mars {
+                    margin-top: 207px;
+                    .planet_img {margin-bottom: 88px;}
+                    .images {width: 129px; height: 129px;}
+                    .btn:hover::after, .btn.active::after {background-color: $lightRed;}
+                }
+                #saturn {
+                    margin-top: 144px;
+                    .planet_img {margin-bottom: 24px;}
+                    .images {width: 256px; height: 256px;}
+                    .btn:hover::after, .btn.active::after {background-color: $orange;}
+                }
+                #jupiter {
+                    margin-top: 159px;
+                    .planet_img {margin-bottom: 41px;}
+                    .images {width: 224px; height: 224px;}
+                    .btn:hover::after, .btn.active::after {background-color: $red;}
+                }
+                #uranus {
+                    margin-top: 183px;
+                    .planet_img {margin-bottom: 65px;}
+                    .images {width: 176px; height: 176px;}
+                    .btn:hover::after, .btn.active::after {background-color: $green;}
+                }
+                #neptune {
+                    margin-top: 184px;
+                    .planet_img {margin-bottom: 67px;}
+                    .images {width: 173px; height: 173px;}
+                    .btn:hover::after, .btn.active::after {background-color: $blue;}
+                }
+            } 
+        }
+    } 
+}

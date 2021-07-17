@@ -1,0 +1,1010 @@
+/*
+|---------------------------------------------
+| FONTS | SPARTAN REGULAR+BOLD
+|---------------------------------------------
+*/
+/* latin-ext */
+@font-face {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QytlBfK.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QKtlA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QytlBfK.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QKtlA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*
+|---------------------------------------------
+| FONTS | ANTONIO MEDIUM
+|---------------------------------------------
+*/
+/* latin-ext */
+@font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/antonio/v1/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVxD8StBaWHASQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/antonio/v1/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVxD8StPaWE.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*
+|---------------------------------------------
+| RESET
+|---------------------------------------------
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear:before, .clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*
+|---------------------------------------------
+| MAIN STYLE
+|---------------------------------------------
+*/
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: #070724;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+body * {
+  transition: all 0.3s;
+}
+body .row {
+  display: flex;
+}
+body .wrap {
+  flex-wrap: wrap;
+}
+body .nowrap {
+  flex-wrap: nowrap;
+}
+body .justify_between {
+  justify-content: space-between;
+}
+body .align-center {
+  align-items: center;
+}
+body .absolute {
+  position: absolute;
+}
+body .text-center {
+  text-align: center;
+}
+body .hide_on_med_and_up {
+  display: none;
+}
+body #app {
+  background: url("../images/background-stars.svg");
+}
+body #app .main {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+body #app .main h1, body #app .main h2, body #app .main h3, body #app .main h4, body #app .main a, body #app .main button, body #app .main .logo {
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+body #app .main h1 {
+  line-height: 103px;
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  color: #FFFFFF;
+}
+body #app .main h2 {
+  line-height: 52px;
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  color: #FFFFFF;
+}
+body #app .main h3 {
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2.6px;
+  color: #FFFFFF;
+}
+body #app .main h4 {
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #838391;
+}
+body #app .main header .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #838391 1px solid;
+  padding: 0 40px 0 32px;
+}
+body #app .main header .nav-wrapper .mobile_nav_trigger {
+  display: none;
+}
+body #app .main header .nav-wrapper .logo {
+  display: flex;
+  font-size: 28px;
+  letter-spacing: -1.05px;
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  line-height: 36px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin: 22px 0 27px 0;
+}
+body #app .main header .nav-wrapper .logo a {
+  margin: auto;
+}
+body #app .main header .nav-wrapper nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  width: 665px;
+}
+body #app .main header .nav-wrapper nav ul li {
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+body #app .main header .nav-wrapper nav ul li a {
+  display: block;
+  position: relative;
+  font-size: 11px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+body #app .main header .nav-wrapper nav ul li a::after, body #app .main header .nav-wrapper nav ul li .router-link-active.router-link-exact-active::after {
+  content: "";
+  position: absolute;
+  top: -29px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 4px;
+  background-color: #419EBB;
+  opacity: 0;
+  -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, -webkit-transform 500ms;
+  -o-transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+}
+body #app .main header .nav-wrapper nav ul li a:hover::after, body #app .main header .nav-wrapper nav ul li .router-link-active.router-link-exact-active::after {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0.2em, 0);
+  transform: translate3d(0, 0.2em, 0);
+}
+body #app .main header .nav-wrapper nav ul li a::after, body #app .main header .nav-wrapper nav ul li .router-link-active.router-link-exact-active::after {
+  opacity: 1;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+body #app .main header .nav-wrapper nav ul li a:hover::after, body #app .main header .nav-wrapper nav ul li .router-link-active.router-link-exact-active::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+body #app .main .content .section {
+  max-width: 1130px;
+  width: 100%;
+  padding: 0 10px;
+  margin: calc(212px - 85px) auto 0 auto;
+}
+body #app .main .content .section .planet_infos {
+  width: 360px;
+  padding-left: 10px;
+}
+body #app .main .content .section .planet_infos #text {
+  padding-top: 23px;
+}
+body #app .main .content .section .planet_infos .source {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+}
+body #app .main .content .section .planet_infos .source > *:not(:last-child) {
+  opacity: 50%;
+}
+body #app .main .content .section .planet_infos .source a {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-right: 4px;
+}
+body #app .main .content .section .planet_infos .buttons {
+  padding-top: 39px;
+}
+body #app .main .content .section .planet_infos .btn {
+  cursor: pointer;
+  padding: 12px 28px;
+  border: #838391 1px solid;
+}
+body #app .main .content .section .planet_infos .btn:hover {
+  background-color: #38384F;
+}
+body #app .main .content .section .planet_infos .btn-id {
+  color: #838391;
+  padding-right: 25px;
+}
+body #app .main .content .section .planet_infos .btn:not(:first-child) {
+  margin-top: 16px;
+}
+body #app .main .content .section .planet_img {
+  width: calc(100% - 360px);
+}
+body #app .main .content .section .planet_img img {
+  width: 100%;
+}
+body #app .main .content .section .planet_img .hidden_image {
+  display: none;
+}
+body #app .main .content .section .planet_img #geology_image {
+  width: 163px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body #app .main .content .section .planet_img .images {
+  position: relative;
+  margin: auto;
+}
+body #app .main .content .section .numbers {
+  margin-top: calc(840px - 753px);
+  margin-bottom: 56px;
+  margin-left: -30px;
+}
+body #app .main .content .section .stats {
+  width: 255px;
+  padding: 20px 0 27px 23px;
+  border: 1px solid #838391;
+  margin-left: 30px;
+}
+body #app .main #mercury .images {
+  width: 290px;
+  height: 290px;
+}
+body #app .main #mercury .btn.active {
+  background-color: #419EBB;
+  border-color: #419EBB;
+}
+body #app .main #mercury #geology_image {
+  top: 78%;
+}
+body #app .main #venus .btn.active {
+  background-color: #EDA249;
+  border-color: #EDA249;
+}
+body #app .main #venus .images {
+  width: 400px;
+  height: 400px;
+}
+body #app .main #venus #geology_image {
+  top: 70%;
+}
+body #app .main #earth .btn.active {
+  background-color: #6f2ed6;
+  border-color: #6f2ed6;
+}
+body #app .main #earth .images {
+  width: 450px;
+  height: 450px;
+}
+body #app .main #earth #geology_image {
+  top: 68%;
+}
+body #app .main #mars .btn.active {
+  background-color: #D14C32;
+  border-color: #D14C32;
+}
+body #app .main #mars .images {
+  width: 336px;
+  height: 336px;
+}
+body #app .main #mars #geology_image {
+  top: 74%;
+}
+body #app .main #jupiter .btn.active {
+  background-color: #D83A34;
+  border-color: #D83A34;
+}
+body #app .main #jupiter .images {
+  width: 582px;
+  height: 582px;
+}
+body #app .main #jupiter #geology_image {
+  top: 64%;
+}
+body #app .main #saturn .btn.active {
+  background-color: #CD5120;
+  border-color: #CD5120;
+}
+body #app .main #saturn .images {
+  width: 600px;
+  height: 600px;
+}
+body #app .main #saturn #geology_image {
+  top: 60%;
+}
+body #app .main #uranus .btn.active {
+  background-color: #1ec2a4;
+  border-color: #1ec2a4;
+}
+body #app .main #uranus .images {
+  width: 458px;
+  height: 458px;
+}
+body #app .main #uranus #geology_image {
+  top: 67%;
+}
+body #app .main #neptune .btn.active {
+  background-color: #2d68f0;
+  border-color: #2d68f0;
+}
+body #app .main #neptune .images {
+  width: 450px;
+  height: 450px;
+}
+body #app .main #neptune #geology_image {
+  top: 67%;
+}
+body .circle-container {
+  position: relative;
+  width: 30em;
+  height: 30em;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  margin: 100px auto 0;
+}
+body .circle-container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8em;
+  height: 8em;
+  margin: -4em;
+}
+body .circle-container > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(15em) rotate(0deg);
+}
+body .circle-container > *:nth-of-type(2) {
+  transform: rotate(45deg) translate(15em) rotate(-45deg);
+}
+body .circle-container > *:nth-of-type(3) {
+  transform: rotate(90deg) translate(15em) rotate(-90deg);
+}
+body .circle-container > *:nth-of-type(4) {
+  transform: rotate(135deg) translate(15em) rotate(-135deg);
+}
+body .circle-container > *:nth-of-type(5) {
+  transform: rotate(180deg) translate(15em) rotate(-180deg);
+}
+body .circle-container > *:nth-of-type(6) {
+  transform: rotate(225deg) translate(15em) rotate(-225deg);
+}
+body .circle-container > *:nth-of-type(7) {
+  transform: rotate(270deg) translate(15em) rotate(-270deg);
+}
+body .circle-container > *:nth-of-type(8) {
+  transform: rotate(315deg) translate(15em) rotate(-315deg);
+}
+body .circle-container li {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  transition: 0.15s;
+}
+body .circle-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 918px) {
+  body {
+    font-size: 11px;
+    line-height: 22px;
+  }
+
+  body #app .main h1 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  body #app .main h2 {
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.9px;
+  }
+  body #app .main h3 {
+    font-size: 9px;
+    line-height: 25px;
+    letter-spacing: 1.93px;
+  }
+  body #app .main h4 {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: -0.73px;
+  }
+  body #app .main header .nav-wrapper {
+    justify-content: center;
+    padding: 0 52px 27px 51px;
+  }
+  body #app .main header .nav-wrapper .logo {
+    width: 100%;
+    text-align: center;
+    margin: 32px 0 39px 0;
+  }
+  body #app .main header .nav-wrapper nav ul li {
+    height: 25px;
+    line-height: 25px;
+  }
+  body #app .main .content .section {
+    max-width: 709px;
+  }
+  body #app .main .content .section .description {
+    width: 339px;
+  }
+  body #app .main .content .section .planet_infos, body #app .main .content .section .planet_img {
+    width: 100%;
+  }
+  body #app .main .content .section .planet_infos {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  body #app .main .content .section .planet_infos .buttons {
+    width: 281px;
+    padding-top: 56px;
+  }
+  body #app .main .content .section .planet_infos #text {
+    padding-top: 24px;
+  }
+  body #app .main .content .section .planet_infos .source {
+    padding-top: 32px;
+  }
+  body #app .main .content .section .planet_infos .btn {
+    padding: 8px 0 7px 20px;
+  }
+  body #app .main .content .section .planet_img #geology_image {
+    width: 100px;
+  }
+  body #app .main .content .section .numbers {
+    margin-top: 27px;
+    margin-left: -11px;
+    margin-bottom: 36px;
+  }
+  body #app .main .content .section .stats {
+    width: 164px;
+    padding: 16px 0 19px 15px;
+    border: 1px solid #838391;
+    margin-left: 11px;
+  }
+  body #app .main #mercury .images {
+    width: 184px;
+    height: 184px;
+  }
+  body #app .main #mercury .planet_img {
+    margin-bottom: 130px;
+  }
+  body #app .main #venus {
+    margin-top: 112px;
+  }
+  body #app .main #venus .images {
+    width: 253px;
+    height: 253px;
+  }
+  body #app .main #venus .planet_img {
+    margin-bottom: 95px;
+  }
+  body #app .main #earth {
+    margin-top: 96px;
+  }
+  body #app .main #earth .images {
+    width: 285px;
+    height: 285px;
+  }
+  body #app .main #earth .planet_img {
+    margin-bottom: 79px;
+  }
+  body #app .main #mars {
+    margin-top: 132px;
+  }
+  body #app .main #mars .images {
+    width: 213px;
+    height: 213px;
+  }
+  body #app .main #mars .planet_img {
+    margin-bottom: 115px;
+  }
+  body #app .main #jupiter {
+    margin-top: 54px;
+  }
+  body #app .main #jupiter .images {
+    width: 369px;
+    height: 369px;
+  }
+  body #app .main #jupiter .planet_img {
+    margin-bottom: 37px;
+  }
+  body #app .main #saturn {
+    margin-top: 27px;
+  }
+  body #app .main #saturn .images {
+    width: 422px;
+    height: 422px;
+  }
+  body #app .main #saturn .planet_img {
+    margin-bottom: 11px;
+  }
+  body #app .main #uranus {
+    margin-top: 93px;
+  }
+  body #app .main #uranus .images {
+    width: 290px;
+    height: 290px;
+  }
+  body #app .main #uranus .planet_img {
+    margin-bottom: 77px;
+  }
+  body #app .main #neptune {
+    margin-top: 96px;
+  }
+  body #app .main #neptune .images {
+    width: 285px;
+    height: 285px;
+  }
+  body #app .main #neptune .planet_img {
+    margin-bottom: 79px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .hide_on_mobile {
+    display: none !important;
+  }
+
+  .opacity {
+    opacity: 25%;
+  }
+
+  body .hide_on_med_and_up {
+    display: block;
+  }
+  body #app .main {
+    padding: 0 24px;
+  }
+  body #app .main h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  body #app .main h2 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.9px;
+  }
+  body #app .main h3 {
+    line-height: 10px;
+    letter-spacing: 1.93px;
+    width: 80px;
+    text-align: center;
+  }
+  body #app .main h4 {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: -0.75px;
+  }
+  body #app .main header .nav-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  body #app .main header .nav-wrapper .logo {
+    margin: 16px 0 17px 0;
+    width: 109px;
+    text-align: left;
+  }
+  body #app .main header .nav-wrapper .mobile_nav_trigger {
+    display: flex;
+    order: 2;
+  }
+  body #app .main header .nav-wrapper .mobile_nav_trigger img {
+    margin: auto;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive {
+    display: block !important;
+    height: auto;
+    width: 100%;
+    z-index: 99;
+    background-color: #070724;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    padding-top: 24px;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li {
+    display: flex;
+    align-items: center;
+    padding: 20px 32px 20px 24px;
+    height: 65px;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li .planet_dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li .icon_chevron {
+    height: 10px;
+    width: 6px;
+    opacity: 40%;
+    transition: all 0.5s;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #mercury_dot {
+    background: #DEF4FC;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #venus_dot {
+    background: #F7CC7F;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #earth_dot {
+    background: #545BFE;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #mars_dot {
+    background: #FF6A45;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #jupiter_dot {
+    background: #ECAD7A;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #saturn_dot {
+    background: #FCCB6B;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #uranus_dot {
+    background: #65F0D5;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li #neptune_dot {
+    background: #497EFA;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li a {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1.36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li a:hover img.hide_on_med_and_up.icon_chevron, body #app .main header .nav-wrapper nav ul.responsive li .router-link-active.router-link-exact-active .icon_chevron {
+    opacity: 1;
+    margin-right: 77%;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li a::after, body #app .main header .nav-wrapper nav ul.responsive li .router-link-active.router-link-exact-active::after {
+    background-color: transparent;
+  }
+  body #app .main header .nav-wrapper nav ul.responsive li:not(:first-child) {
+    border-top: 1px #838391 solid;
+  }
+  body #app .main .content .section {
+    padding: 0;
+  }
+  body #app .main .content .section .description {
+    width: 100%;
+  }
+  body #app .main .content .section .planet_infos {
+    flex-direction: column;
+    text-align: center;
+  }
+  body #app .main .content .section .planet_infos .buttons {
+    width: 100%;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: solid 1px #838391;
+  }
+  body #app .main .content .section .planet_infos #text {
+    padding-top: 16px;
+  }
+  body #app .main .content .section .planet_infos .source {
+    justify-content: center;
+  }
+  body #app .main .content .section .planet_infos .btn {
+    padding: 20px 0;
+    border: none;
+    position: relative;
+    opacity: 50%;
+  }
+  body #app .main .content .section .planet_infos .btn:not(:first-child) {
+    margin: 0 0 0 44px;
+  }
+  body #app .main .content .section .planet_infos .btn:hover {
+    background: transparent;
+    opacity: 1;
+  }
+  body #app .main .content .section .planet_infos .btn::after, body #app .main .content .section .planet_infos .btn.active::after, body #app .main .content .section .planet_infos #mercury .btn.active::after, body #app .main .content .section .planet_infos #venus .btn.active::after, body #app .main .content .section .planet_infos #earth .btn.active::after, body #app .main .content .section .planet_infos #mars .btn.active::after, body #app .main .content .section .planet_infos #saturn .btn.active::after, body #app .main .content .section .planet_infos #jupiter .btn.active::after, body #app .main .content .section .planet_infos #uranus .btn.active::after, body #app .main .content .section .planet_infos #neptune .btn.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 4px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+    transition: opacity 500ms, -webkit-transform 500ms;
+    -o-transition: opacity 500ms, transform 500ms;
+    transition: opacity 500ms, transform 500ms;
+    transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+  }
+  body #app .main .content .section .planet_infos .btn:hover::after, body #app .main .content .section .planet_infos .btn.active::after, body #app .main .content .section .planet_infos #mercury .btn.active::after, body #app .main .content .section .planet_infos #venus .btn.active::after, body #app .main .content .section .planet_infos #earth .btn.active::after, body #app .main .content .section .planet_infos #mars .btn.active::after, body #app .main .content .section .planet_infos #saturn .btn.active::after, body #app .main .content .section .planet_infos #jupiter .btn.active::after, body #app .main .content .section .planet_infos #uranus .btn.active::after, body #app .main .content .section .planet_infos #neptune .btn.active::after {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0.2em, 0);
+    transform: translate3d(0, 0.2em, 0);
+  }
+  body #app .main .content .section .planet_infos .btn::after, body #app .main .content .section .planet_infos .btn.active::after, body #app .main .content .section .planet_infos #mercury .btn.active::after, body #app .main .content .section .planet_infos #venus .btn.active::after, body #app .main .content .section .planet_infos #earth .btn.active::after, body #app .main .content .section .planet_infos #mars .btn.active::after, body #app .main .content .section .planet_infos #saturn .btn.active::after, body #app .main .content .section .planet_infos #jupiter .btn.active::after, body #app .main .content .section .planet_infos #uranus .btn.active::after, body #app .main .content .section .planet_infos #neptune .btn.active::after {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+  }
+  body #app .main .content .section .planet_infos .btn:hover::after, body #app .main .content .section .planet_infos .btn.active::after, body #app .main .content .section .planet_infos #mercury .btn.active::after, body #app .main .content .section .planet_infos #venus .btn.active::after, body #app .main .content .section .planet_infos #earth .btn.active::after, body #app .main .content .section .planet_infos #mars .btn.active::after, body #app .main .content .section .planet_infos #saturn .btn.active::after, body #app .main .content .section .planet_infos #jupiter .btn.active::after, body #app .main .content .section .planet_infos #uranus .btn.active::after, body #app .main .content .section .planet_infos #neptune .btn.active::after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  body #app .main .content .section .planet_img #geology_image {
+    width: 80px;
+  }
+  body #app .main .content .section .numbers.row {
+    flex-direction: column;
+    margin-top: 28px;
+    margin-bottom: 47px;
+  }
+  body #app .main .content .section .numbers.row .stats {
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 24px 13px 24px;
+  }
+  body #app .main .content .section .numbers.row .stats:not(:first-child) {
+    margin-top: 8px;
+  }
+  body #app .main #mercury .btn.active, body #app .main #venus .btn.active, body #app .main #earth .btn.active, body #app .main #mars .btn.active, body #app .main #saturn .btn.active, body #app .main #jupiter .btn.active, body #app .main #uranus .btn.active, body #app .main #neptune .btn.active {
+    background-color: transparent;
+    opacity: 1;
+  }
+  body #app .main #mercury {
+    margin-top: 215px;
+  }
+  body #app .main #mercury .planet_img {
+    margin-bottom: 98px;
+  }
+  body #app .main #mercury .images {
+    width: 111px;
+    height: 111px;
+  }
+  body #app .main #mercury .btn:hover::after, body #app .main #mercury .btn.active::after {
+    background-color: #419EBB;
+  }
+  body #app .main #venus {
+    margin-top: 194px;
+  }
+  body #app .main #venus .planet_img {
+    margin-bottom: 76px;
+  }
+  body #app .main #venus .images {
+    width: 154px;
+    height: 154px;
+  }
+  body #app .main #venus .btn:hover::after, body #app .main #venus .btn.active::after {
+    background-color: #EDA249;
+  }
+  body #app .main #earth {
+    margin-top: 184px;
+  }
+  body #app .main #earth .planet_img {
+    margin-bottom: 67px;
+  }
+  body #app .main #earth .images {
+    width: 173px;
+    height: 173px;
+  }
+  body #app .main #earth .btn:hover::after, body #app .main #earth .btn.active::after {
+    background-color: #6f2ed6;
+  }
+  body #app .main #mars {
+    margin-top: 207px;
+  }
+  body #app .main #mars .planet_img {
+    margin-bottom: 88px;
+  }
+  body #app .main #mars .images {
+    width: 129px;
+    height: 129px;
+  }
+  body #app .main #mars .btn:hover::after, body #app .main #mars .btn.active::after {
+    background-color: #D14C32;
+  }
+  body #app .main #saturn {
+    margin-top: 144px;
+  }
+  body #app .main #saturn .planet_img {
+    margin-bottom: 24px;
+  }
+  body #app .main #saturn .images {
+    width: 256px;
+    height: 256px;
+  }
+  body #app .main #saturn .btn:hover::after, body #app .main #saturn .btn.active::after {
+    background-color: #CD5120;
+  }
+  body #app .main #jupiter {
+    margin-top: 159px;
+  }
+  body #app .main #jupiter .planet_img {
+    margin-bottom: 41px;
+  }
+  body #app .main #jupiter .images {
+    width: 224px;
+    height: 224px;
+  }
+  body #app .main #jupiter .btn:hover::after, body #app .main #jupiter .btn.active::after {
+    background-color: #D83A34;
+  }
+  body #app .main #uranus {
+    margin-top: 183px;
+  }
+  body #app .main #uranus .planet_img {
+    margin-bottom: 65px;
+  }
+  body #app .main #uranus .images {
+    width: 176px;
+    height: 176px;
+  }
+  body #app .main #uranus .btn:hover::after, body #app .main #uranus .btn.active::after {
+    background-color: #1ec2a4;
+  }
+  body #app .main #neptune {
+    margin-top: 184px;
+  }
+  body #app .main #neptune .planet_img {
+    margin-bottom: 67px;
+  }
+  body #app .main #neptune .images {
+    width: 173px;
+    height: 173px;
+  }
+  body #app .main #neptune .btn:hover::after, body #app .main #neptune .btn.active::after {
+    background-color: #2d68f0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+/*
+|---------------------------------------------
+| FONTS | SPARTAN REGULAR+BOLD
+|---------------------------------------------
+*/
+/* latin-ext */
+@font-face {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QytlBfK.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QKtlA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QytlBfK.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spartan/v3/l7gfbjR61M69yt8Z2QKtlA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*
+|---------------------------------------------
+| FONTS | ANTONIO MEDIUM
+|---------------------------------------------
+*/
+/* latin-ext */
+@font-face {
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/antonio/v1/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVxD8StBaWHASQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/antonio/v1/gNMbW3NwSYq_9WD34ngK5F8vR8T0PVxD8StPaWE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+$spartan: 'Spartan', sans-serif;
+$antonio: 'Antonio', sans-serif;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+$xs: 11px;
+$s: 12px;
+$m: 14px;
+$l: 40px;
+$xl: 80px;
+
+$white: #FFFFFF;
+$dark: #070724;
+$grey: #38384F;
+$lightGrey: #838391;
+$cyan: #419EBB;
+$yellow: #EDA249;
+$purple: #6f2ed6;
+$lightRed: #D14C32;
+$red: #D83A34;
+$orange: #CD5120;
+$green: #1ec2a4;
+$blue: #2d68f0;

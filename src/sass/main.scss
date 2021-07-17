@@ -1,0 +1,461 @@
+@import './variables';
+
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+    position: relative;
+    width:  $circle-size;
+    height: $circle-size;
+    padding: 0;
+    border-radius: 50%; 
+    list-style: none;  
+    > * {
+        display: block;
+        position: absolute;
+        top:  50%; 
+        left: 50%;
+        width:  $item-size;
+        height: $item-size;
+        margin: -($item-size / 2);
+        
+        $angle: (360 / $item-count);
+        $rot: 0;
+  
+        @for $i from 1 through $item-count {
+            &:nth-of-type(#{$i}) {
+                transform: 
+                rotate($rot * 1deg) 
+                translate($circle-size / 2) 
+                rotate($rot * -1deg);
+            }
+            $rot: $rot + $angle;
+        }
+    }
+}
+/*
+|---------------------------------------------
+| RESET
+|---------------------------------------------
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:after,*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clear:before, .clear:after {
+  content: ' ';
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+.clear {
+  *zoom: 1;
+}
+a {
+    text-decoration: none;
+    color: $white;
+}
+/*
+|---------------------------------------------
+| MAIN STYLE
+|---------------------------------------------
+*/
+body {
+    font-family: $spartan; 
+    font-weight: $regular; 
+    font-size: $m; 
+    background: $dark;
+    line-height: 25px;
+    color: $white;
+    * {
+        transition: all .3s;
+    }
+    .row {
+        display: flex;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .nowrap {
+        flex-wrap: nowrap;
+    }
+    .justify_between {
+        justify-content: space-between;
+    }
+    .align-center {
+        align-items: center;
+    }
+    .absolute {
+        position: absolute;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .hide_on_med_and_up {
+        display: none;
+    }
+    #app {
+        background: url('../images/background-stars.svg');
+        .main {
+            max-width: 1440px;
+            width: 100%;
+            margin: auto;
+            h1, h2, h3, h4, a, button, .logo {
+                text-transform: uppercase;
+                vertical-align: middle;
+            }
+            h1 {
+                line-height: 103px;
+                font-family: $antonio; 
+                font-weight: $medium;
+                font-size: $xl;
+                color: $white;
+            }
+            h2 {
+                line-height: 52px;
+                font-family: $antonio; 
+                font-weight: $medium;
+                font-size: $l;
+                letter-spacing: -1.5px;
+                color: $white;
+            }
+            h3 {
+                line-height: 25px;
+                font-weight: $bold;
+                font-size: $s;
+                letter-spacing: 2.6px;
+                color: $white;
+            }
+            h4 {
+                line-height: 25px;
+                font-weight: $bold;
+                font-size: $xs;
+                letter-spacing: 1px;
+                color: $lightGrey;
+            }
+            header {
+                .nav-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: $lightGrey 1px solid;
+                    padding: 0 40px 0 32px;
+                    .mobile_nav_trigger {
+                        display: none;
+                    }
+                    .logo {
+                        display: flex;
+                        font-size: 28px;
+                        letter-spacing: -1.05px;
+                        font-family: $antonio;
+                        font-weight: $medium;
+                        line-height: 36px;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        margin: 22px 0 27px 0;
+                        a {
+                            margin: auto;
+                        }
+                    }
+                    nav ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: stretch;
+                        height: 100%;
+                        width: 665px;
+                        li {
+                            height: 25px;
+                            line-height: 25px;
+                            vertical-align: middle;
+                            a {
+                                display: block;
+                                position: relative;
+                                font-size: $xs;
+                                font-family: $spartan;
+                                font-weight: $bold;
+                                letter-spacing: 1px;
+                            }
+                            a::after, .router-link-active.router-link-exact-active::after {
+                                content: ''; 
+                                position: absolute; 
+                                top: -29px; 
+                                left: 0; 
+                                right: 0; 
+                                width: 100%; 
+                                margin: 0 auto; 
+                                height: 4px; 
+                                background-color: $cyan; 
+                                opacity: 0; 
+                                -webkit-transition: opacity 500ms, -webkit-transform 500ms; 
+                                transition: opacity 500ms, -webkit-transform 500ms; 
+                                -o-transition: opacity 500ms, transform 500ms; 
+                                transition: opacity 500ms, transform 500ms; 
+                                transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+                            }
+                            a:hover::after, .router-link-active.router-link-exact-active::after {
+                                opacity: 1; 
+                                -webkit-transform: translate3d(0, 0.2em, 0); 
+                                transform: translate3d(0, 0.2em, 0);
+                            }
+                            a::after, .router-link-active.router-link-exact-active::after {opacity: 1; 
+                                -webkit-transform: scale(0); 
+                                -ms-transform: scale(0); 
+                                transform: scale(0); 
+                                -webkit-transform-origin: center; 
+                                -ms-transform-origin: center; 
+                                transform-origin: center;
+                            }
+                            a:hover::after, .router-link-active.router-link-exact-active::after {
+                                -webkit-transform: scale(1);
+                                -ms-transform: scale(1);
+                                transform: scale(1);
+                            }
+                        }
+                    } 
+                }
+            }
+            .content .section {
+                max-width: 1130px;
+                width: 100%;
+                padding: 0 10px;
+                margin: calc(212px - 85px) auto 0 auto;
+                .planet_infos {
+                    width: 360px;
+                    padding-left: 10px;
+                    #text {
+                        padding-top: 23px;
+                    }
+                    .source {
+                        padding-top: 24px;
+                        display: flex; 
+                        align-items: center;
+                    }
+                    .source>*:not(:last-child) {
+                        opacity: 50%;
+                    }
+                    .source a {
+                        text-transform: capitalize;
+                        text-decoration: underline;
+                        font-weight: $bold;
+                        margin-right: 4px;
+                    }
+                    .buttons {
+                        padding-top: 39px;
+                    }
+                    .btn {
+                        cursor: pointer;
+                        padding: 12px 28px;
+                        border: $lightGrey 1px solid;
+                    }
+                    .btn:hover {
+                        background-color: $grey;
+                    }
+                    .btn-id {
+                        color: $lightGrey;
+                        padding-right: 25px;
+                    }
+                    .btn:not(:first-child) {
+                        margin-top: 16px
+                    }
+                }
+                .planet_img {
+                    width: calc(100% - 360px);
+                    img {
+                        width: 100%;
+                    }
+                    .hidden_image {
+                        display: none
+                    }
+                    #geology_image {
+                        width: 163px;
+                        height: auto;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .images {
+                        position: relative;
+                        margin: auto;
+                    }
+                }
+                .numbers {
+                    margin-top: calc(840px - 753px);
+                    margin-bottom: 56px;
+                    margin-left: -30px;
+                }
+                .stats {
+                    width: 255px;
+                    padding: 20px 0 27px 23px;
+                    border: 1px solid $lightGrey;
+                    margin-left: 30px;
+                }
+            }
+            #mercury {
+                .images {
+                    width: 290px;
+                    height: 290px;
+                }
+                .btn.active {
+                    background-color: $cyan;
+                    border-color: $cyan
+                }
+                #geology_image {
+                    top: 78%
+                }
+            } 
+            #venus {
+                .btn.active {
+                    background-color: $yellow;
+                    border-color: $yellow
+                }
+                .images {
+                    width: 400px;
+                    height: 400px;
+                }
+                #geology_image {
+                    top: 70%
+                }
+            } 
+            #earth {
+                .btn.active {
+                background-color: $purple;
+                border-color: $purple
+                }
+                .images {
+                    width: 450px;
+                    height: 450px;
+                }
+                #geology_image {
+                    top: 68%
+                }
+            }
+            #mars {
+                .btn.active {
+                    background-color: $lightRed;
+                    border-color: $lightRed
+                }
+                .images {
+                    width: 336px;
+                    height: 336px;
+                }
+                #geology_image {
+                    top: 74%
+                }
+            } 
+            #jupiter {
+                .btn.active {
+                    background-color: $red;
+                    border-color: $red 
+                }
+                .images {
+                    width: 582px;
+                    height: 582px;
+                }
+                #geology_image {
+                    top: 64%
+                }
+            }
+            #saturn {
+                .btn.active {
+                    background-color: $orange;
+                    border-color: $orange
+                }
+                .images {
+                    width: 600px;
+                    height: 600px;
+                }
+                #geology_image {
+                    top: 60%
+                }
+            }
+            #uranus {
+                .btn.active {
+                    background-color: $green;
+                    border-color: $green
+                }
+                .images {
+                    width: 458px;
+                    height: 458px;
+                }
+                #geology_image {
+                    top: 67%
+                }
+            }
+            #neptune {
+                .btn.active {
+                    background-color: $blue;
+                    border-color: $blue
+                }
+                .images {
+                    width: 450px;
+                    height: 450px;
+                }
+                #geology_image {
+                    top: 67%
+                }
+            }
+        }
+    }
+    .circle-container {
+        @include on-circle($item-count: 8, $circle-size: 30em, $item-size: 8em); 
+        margin: 100px auto 0;
+        
+        li { 
+            display: block; 
+            max-width: 100%;
+            border-radius: 50%;
+            transition: .15s;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+@import './tablet';
+@import './mobile';
