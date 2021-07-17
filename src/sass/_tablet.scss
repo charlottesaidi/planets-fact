@@ -1,6 +1,7 @@
 @media screen and (max-width: 918px) {
     body {font-size: 11px; line-height: 22px;}
     body #app .main {
+        padding-bottom: 36px;
         h1 {font-size: 48px; line-height: 62px;}
         h2 {font-size: 24px; line-height: 31px; letter-spacing: -0.9px;}
         h3 {font-size: 9px; line-height: 25px; letter-spacing: 1.93px;}
@@ -22,7 +23,7 @@
                 .btn {padding: 8px 0 7px 20px;}
             }
             .planet_img #geology_image {width: 100px}
-            .numbers {margin-top: 27px; margin-left: -11px; margin-bottom: 36px}
+            .numbers {margin-top: 27px; margin-left: -11px;}
             .stats {width: 164px; padding: 16px 0 19px 15px; border: 1px solid $lightGrey; margin-left: 11px;}
         }
         #mercury {

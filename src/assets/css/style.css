@@ -144,11 +144,14 @@ a {
 | MAIN STYLE
 |---------------------------------------------
 */
+html {
+  background: url("../images/realist_images/background-star.webp");
+}
+
 body {
   font-family: "Spartan", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  background: #070724;
   line-height: 25px;
   color: #FFFFFF;
 }
@@ -179,13 +182,11 @@ body .text-center {
 body .hide_on_med_and_up {
   display: none;
 }
-body #app {
-  background: url("../images/background-stars.svg");
-}
 body #app .main {
   max-width: 1440px;
   width: 100%;
   margin: auto;
+  padding-bottom: 56px;
 }
 body #app .main h1, body #app .main h2, body #app .main h3, body #app .main h4, body #app .main a, body #app .main button, body #app .main .logo {
   text-transform: uppercase;
@@ -366,7 +367,6 @@ body #app .main .content .section .planet_img .images {
 }
 body #app .main .content .section .numbers {
   margin-top: calc(840px - 753px);
-  margin-bottom: 56px;
   margin-left: -30px;
 }
 body #app .main .content .section .stats {
@@ -435,8 +435,12 @@ body #app .main #saturn .btn.active {
   border-color: #CD5120;
 }
 body #app .main #saturn .images {
+  display: flex;
   width: 600px;
   height: 600px;
+}
+body #app .main #saturn .images img {
+  margin: auto;
 }
 body #app .main #saturn #geology_image {
   top: 60%;
@@ -463,56 +467,69 @@ body #app .main #neptune .images {
 body #app .main #neptune #geology_image {
   top: 67%;
 }
-body .circle-container {
+body .home_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .home_body .circle-container {
   position: relative;
-  width: 30em;
-  height: 30em;
+  width: 420px;
+  height: 420px;
   padding: 0;
   border-radius: 50%;
   list-style: none;
-  margin: 100px auto 0;
+  margin: 100px auto;
 }
-body .circle-container > * {
+body .home_body .circle-container > * {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 8em;
-  height: 8em;
-  margin: -4em;
+  width: 112px;
+  height: 112px;
+  margin: -56px;
 }
-body .circle-container > *:nth-of-type(1) {
-  transform: rotate(0deg) translate(15em) rotate(0deg);
+body .home_body .circle-container > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(210px) rotate(0deg);
 }
-body .circle-container > *:nth-of-type(2) {
-  transform: rotate(45deg) translate(15em) rotate(-45deg);
+body .home_body .circle-container > *:nth-of-type(2) {
+  transform: rotate(45deg) translate(210px) rotate(-45deg);
 }
-body .circle-container > *:nth-of-type(3) {
-  transform: rotate(90deg) translate(15em) rotate(-90deg);
+body .home_body .circle-container > *:nth-of-type(3) {
+  transform: rotate(90deg) translate(210px) rotate(-90deg);
 }
-body .circle-container > *:nth-of-type(4) {
-  transform: rotate(135deg) translate(15em) rotate(-135deg);
+body .home_body .circle-container > *:nth-of-type(4) {
+  transform: rotate(135deg) translate(210px) rotate(-135deg);
 }
-body .circle-container > *:nth-of-type(5) {
-  transform: rotate(180deg) translate(15em) rotate(-180deg);
+body .home_body .circle-container > *:nth-of-type(5) {
+  transform: rotate(180deg) translate(210px) rotate(-180deg);
 }
-body .circle-container > *:nth-of-type(6) {
-  transform: rotate(225deg) translate(15em) rotate(-225deg);
+body .home_body .circle-container > *:nth-of-type(6) {
+  transform: rotate(225deg) translate(210px) rotate(-225deg);
 }
-body .circle-container > *:nth-of-type(7) {
-  transform: rotate(270deg) translate(15em) rotate(-270deg);
+body .home_body .circle-container > *:nth-of-type(7) {
+  transform: rotate(270deg) translate(210px) rotate(-270deg);
 }
-body .circle-container > *:nth-of-type(8) {
-  transform: rotate(315deg) translate(15em) rotate(-315deg);
+body .home_body .circle-container > *:nth-of-type(8) {
+  transform: rotate(315deg) translate(210px) rotate(-315deg);
 }
-body .circle-container li {
+body .home_body .circle-container li {
   display: block;
   max-width: 100%;
   border-radius: 50%;
   transition: 0.15s;
 }
-body .circle-container img {
+body .home_body .circle-container img {
   width: 100%;
+}
+body .home_body .circle-container h3#title {
+  width: 210px !important;
+  left: -23%;
+  top: 45%;
+  font-weight: 400 !important;
+  margin: 0;
 }
 
 @media screen and (max-width: 918px) {
@@ -521,6 +538,9 @@ body .circle-container img {
     line-height: 22px;
   }
 
+  body #app .main {
+    padding-bottom: 36px;
+  }
   body #app .main h1 {
     font-size: 48px;
     line-height: 62px;
@@ -586,7 +606,6 @@ body .circle-container img {
   body #app .main .content .section .numbers {
     margin-top: 27px;
     margin-left: -11px;
-    margin-bottom: 36px;
   }
   body #app .main .content .section .stats {
     width: 164px;
@@ -685,7 +704,7 @@ body .circle-container img {
     display: block;
   }
   body #app .main {
-    padding: 0 24px;
+    padding: 0 24px 47px 24px;
   }
   body #app .main h1 {
     font-size: 40px;
@@ -696,7 +715,7 @@ body .circle-container img {
     line-height: 26px;
     letter-spacing: -0.9px;
   }
-  body #app .main h3 {
+  body #app .main h3:not(h3#title) {
     line-height: 10px;
     letter-spacing: 1.93px;
     width: 80px;
@@ -795,7 +814,7 @@ body .circle-container img {
   }
   body #app .main header .nav-wrapper nav ul.responsive li a:hover img.hide_on_med_and_up.icon_chevron, body #app .main header .nav-wrapper nav ul.responsive li .router-link-active.router-link-exact-active .icon_chevron {
     opacity: 1;
-    margin-right: 77%;
+    margin-right: 50%;
   }
   body #app .main header .nav-wrapper nav ul.responsive li a::after, body #app .main header .nav-wrapper nav ul.responsive li .router-link-active.router-link-exact-active::after {
     background-color: transparent;
@@ -884,7 +903,6 @@ body .circle-container img {
   body #app .main .content .section .numbers.row {
     flex-direction: column;
     margin-top: 28px;
-    margin-bottom: 47px;
   }
   body #app .main .content .section .numbers.row .stats {
     width: 100%;

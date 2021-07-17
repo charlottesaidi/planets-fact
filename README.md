@@ -1,6 +1,7 @@
 # Frontend Mentor - Planets fact site solution
 
-Solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f).
+I took liberties with the design and changed some images, including the background  
 
 ## Table of contents
 
@@ -13,6 +14,7 @@ Solution to the [Planets fact site challenge on Frontend Mentor](https://www.fro
   - [To Do](#to-do)
   - [Project setup](#project-setup)
   - [Useful resources](#useful-resources)
+  - [Credits](#credits)
 
 ## Overview
 

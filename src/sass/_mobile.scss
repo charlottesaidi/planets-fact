@@ -5,10 +5,10 @@
         .hide_on_med_and_up {display: block}
         #app {
             .main {
-                padding: 0 24px;
+                padding: 0 24px 47px 24px;
                 h1 {font-size: 40px; line-height: 52px;}
                 h2 {font-size: 20px; line-height: 26px; letter-spacing: -0.9px;}
-                h3 {line-height: 10px; letter-spacing: 1.93px; width: 80px; text-align: center;}
+                h3:not(h3#title) {line-height: 10px; letter-spacing: 1.93px; width: 80px; text-align: center;}
                 h4 {font-size: 8px; line-height: 16px; letter-spacing: -0.75px;}
                 header .nav-wrapper {
                     position: absolute; top: 0; right: 0; left: 0; width: 100%; height: 68px; justify-content: space-between; align-items: center; padding: 0 24px;
@@ -34,7 +34,7 @@
                             #uranus_dot {background: #65F0D5;}
                             #neptune_dot {background: #497EFA;}
                             a {width: 100%; border: none; font-size: 15px; line-height: 25px; letter-spacing: 1.36px; display: flex; justify-content: space-between; align-items: center; padding-left: 25px;}
-                            a:hover img.hide_on_med_and_up.icon_chevron, .router-link-active.router-link-exact-active .icon_chevron {opacity: 1; margin-right: 77%;}
+                            a:hover img.hide_on_med_and_up.icon_chevron, .router-link-active.router-link-exact-active .icon_chevron {opacity: 1; margin-right: 50%;}
                             a::after, .router-link-active.router-link-exact-active::after {background-color: transparent}
                         }
                         li:not(:first-child) {border-top: 1px $lightGrey solid}
@@ -88,7 +88,7 @@
                     }
                     .planet_img #geology_image {width: 80px}
                     .numbers.row {
-                        flex-direction: column; margin-top: 28px; margin-bottom: 47px;
+                        flex-direction: column; margin-top: 28px;
                         .stats {width: 100%; margin: 0 5px; display: flex; justify-content: space-between; align-items: center; padding: 9px 24px 13px 24px}
                         .stats:not(:first-child) {margin-top: 8px}
                     }

@@ -107,11 +107,14 @@ a {
 | MAIN STYLE
 |---------------------------------------------
 */
+html {
+    background: url('../images/realist_images/background-star.webp'); 
+}
 body {
+    // height: 100%;
     font-family: $spartan; 
     font-weight: $regular; 
     font-size: $m; 
-    background: $dark;
     line-height: 25px;
     color: $white;
     * {
@@ -142,11 +145,11 @@ body {
         display: none;
     }
     #app {
-        background: url('../images/background-stars.svg');
         .main {
             max-width: 1440px;
             width: 100%;
             margin: auto;
+            padding-bottom: 56px;
             h1, h2, h3, h4, a, button, .logo {
                 text-transform: uppercase;
                 vertical-align: middle;
@@ -326,7 +329,6 @@ body {
                 }
                 .numbers {
                     margin-top: calc(840px - 753px);
-                    margin-bottom: 56px;
                     margin-left: -30px;
                 }
                 .stats {
@@ -407,8 +409,12 @@ body {
                     border-color: $orange
                 }
                 .images {
+                    display: flex;
                     width: 600px;
                     height: 600px;
+                    img {
+                        margin: auto
+                    }
                 }
                 #geology_image {
                     top: 60%
@@ -442,20 +448,33 @@ body {
             }
         }
     }
-    .circle-container {
-        @include on-circle($item-count: 8, $circle-size: 30em, $item-size: 8em); 
-        margin: 100px auto 0;
-        
-        li { 
-            display: block; 
-            max-width: 100%;
-            border-radius: 50%;
-            transition: .15s;
+    .home_body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .circle-container {
+            @include on-circle($item-count: 8, $circle-size: 420px, $item-size: 112px); 
+            margin: 100px auto;
+            
+            li { 
+                display: block; 
+                max-width: 100%;
+                border-radius: 50%;
+                transition: .15s;
+            }
+            img {
+                width: 100%;
+            }
+            h3#title {
+                width: 210px !important;
+                left: -23%;
+                top: 45%; 
+                font-weight: 400 !important;
+                margin: 0;
+            }
         }
-        img {
-            width: 100%;
-        }
-    }
+    } 
 }
 @import './tablet';
 @import './mobile';

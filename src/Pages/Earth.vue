@@ -3,7 +3,7 @@
         <DescriptionBody>
             <Image>
                 <!-- JS decides either one image or the other -->
-                <img id="main_image" src="../assets/images/planet-earth.svg" alt="Planet earth">
+                <img id="main_image" src="../assets/images/realist_images/planet-earth.webp" alt="Planet earth">
                 <img class="hidden_image" id="internal_image" src="../assets/images/planet-earth-internal.svg" alt="Planet earth">
                 <!-- and with or without this one -->
                 <img id="geology_image" class="hidden_image absolute" src="../assets/images/geology-earth.png" height="199" width="163" alt="Geology of earth">
