@@ -19,7 +19,7 @@
               </li>
               <li>
                 <span id="earth_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/planets-fact/earth'" class="nav_links">earth<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact'" class="nav_links">earth<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="mars_dot" class="hide_on_med_and_up planet_dot"></span>
