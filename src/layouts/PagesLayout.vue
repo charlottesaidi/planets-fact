@@ -3,7 +3,7 @@
       
       <header>
         <div class="nav-wrapper row wrap">
-            <p class="logo"><router-link :to="'/'">the planets</router-link></p>
+            <p class="logo"><router-link :to="'/planets-fact'">the planets</router-link></p>
             <a class="mobile_nav_trigger" id="mobile_nav_trigger" href="#" data-target="mobile_nav">
               <img src="../assets/images/icon-hamburger.svg" alt="">
             </a>

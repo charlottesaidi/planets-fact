@@ -13,7 +13,7 @@ import Home from '../Pages/Home.vue'
 // import DefaultLayout from '../layouts/Pages.vue'
 
 export const routes = [
-    { path: '/', component: Home, meta: {layout: 'home'} },
+    { path: '/planets-fact', component: Home, meta: {layout: 'home'} },
     { path: '/earth', component: Earth },
     { path: '/jupiter', component: Jupiter },
     { path: '/mars', component: Mars },
