@@ -145,10 +145,7 @@ a {
 |---------------------------------------------
 */
 html {
-  background-color: #070724;
-  background-image: url("../images/background-stars.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../images/realist_images/background-star.webp");
 }
 
 body {

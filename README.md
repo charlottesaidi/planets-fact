@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: incoming...  
-- Live Site URL: incoming...  
+- [Solution URL](https://www.frontendmentor.io/solutions/planets-fact-site-with-vuejs-sass-and-javascript-yo1U52F-m)  
+- [Live Site URL](https://charlottesaidi.github.io/planets-fact/) 
 
 ## My process
 
