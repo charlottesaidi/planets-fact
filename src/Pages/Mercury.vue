@@ -12,7 +12,7 @@
                 <h1>{{ mercury.name }}</h1>
                 <p id="text">{{overview.content}}</p>
                 <p class="source"><span>Source :</span> 
-                    <a id="source" :href="overview.source">Wikipédia</a>
+                    <a id="source" :href="overview.source" target="_blank">Wikipédia</a>
                     <img src="../assets/images/icon-source.svg" alt="Source arrow icon">
                 </p>
             </Infos>

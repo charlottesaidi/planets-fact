@@ -9,10 +9,12 @@ import Saturne from '../Pages/Saturne.vue'
 import Uranus from '../Pages/Uranus.vue'
 import Venus from '../Pages/Venus.vue'
 import Home from '../Pages/Home.vue'
+import NotFound from '../Pages/404.vue'
 
 // import DefaultLayout from '../layouts/Pages.vue'
 
 export const routes = [
+    {path: '/planets-fact/*', component: NotFound, meta: {layout: 'home'}},
     { path: '/planets-fact', component: Home, meta: {layout: 'home'} },
     { path: '/planets-fact/earth', component: Earth },
     { path: '/planets-fact/jupiter', component: Jupiter },
