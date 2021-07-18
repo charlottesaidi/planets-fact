@@ -8,13 +8,13 @@ import Neptune from '../Pages/Neptune.vue'
 import Saturne from '../Pages/Saturne.vue'
 import Uranus from '../Pages/Uranus.vue'
 import Venus from '../Pages/Venus.vue'
-// import Home from '../Pages/Home.vue'
+import Home from '../Pages/Home.vue'
 
 // import DefaultLayout from '../layouts/Pages.vue'
 
 export const routes = [
-    // { path: '/planets-fact', component: Home, meta: {layout: 'home'} },
-    { path: '/planets-fact', component: Earth },
+    { path: '/planets-fact', component: Home, meta: {layout: 'home'} },
+    { path: '/planets-fact/earth', component: Earth },
     { path: '/planets-fact/jupiter', component: Jupiter },
     { path: '/planets-fact/mars', component: Mars },
     { path: '/planets-fact/mercury', component: Mercury },
