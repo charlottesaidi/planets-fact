@@ -1,6 +1,6 @@
 @media screen and (max-width: 690px) {
     .hide_on_mobile {display: none !important}
-    .opacity {opacity: 25%}
+    .opacity {opacity: .2}
     body {
         .hide_on_med_and_up {display: block}
         #app {
@@ -24,7 +24,7 @@
                         li {
                             display: flex; align-items: center; padding: 20px 32px 20px 24px; height: 65px;
                             .planet_dot {height: 20px; width: 20px; border-radius: 50%; }
-                            .icon_chevron {height: 10px; width: 6px; opacity: 40%; transition: all .5s}
+                            .icon_chevron {height: 10px; width: 6px; opacity: .2; transition: all .5s}
                             #mercury_dot {background: #DEF4FC;}
                             #venus_dot {background: #F7CC7F;}
                             #earth_dot {background: #545BFE;}

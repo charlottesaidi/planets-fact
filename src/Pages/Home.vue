@@ -3,42 +3,42 @@
         <ul class="circle-container">
         <h3 id="title" class="absolute text-center">Explore your solar system and go to...</h3>
             <li class="planets_img">
-                <router-link :to="'/venus'">
+                <router-link :to="'/planets-fact/venus'">
                     <img src="../assets/images/realist_images/planet-venus.webp" alt="Planet venus">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/earth'">
+                <router-link :to="'/planets-fact/earth'">
                     <img src="../assets/images/realist_images/planet-earth.webp" alt="Planet earth">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/saturne'">
+                <router-link :to="'/planets-fact/saturne'">
                     <img src="../assets/images/realist_images/planet-saturn.webp" alt="Planet saturn">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/jupiter'">
+                <router-link :to="'/planets-fact/jupiter'">
                     <img src="../assets/images/realist_images/planet-jupiter.webp" alt="Planet jupiter">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/uranus'">
+                <router-link :to="'/planets-fact/uranus'">
                     <img src="../assets/images/realist_images/planet-uranus.webp" alt="Planet uranus">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/mars'">
+                <router-link :to="'/planets-fact/mars'">
                     <img src="../assets/images/realist_images/planet-mars.webp" alt="Planet mars">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/mercury'">
+                <router-link :to="'/planets-fact/mercury'">
                     <img src="../assets/images/realist_images/planet-mercury.webp" alt="Planet mercury">
                 </router-link>
             </li>
             <li class="planets_img">
-                <router-link :to="'/neptune'">
+                <router-link :to="'/planets-fact/neptune'">
                     <img src="../assets/images/realist_images/planet-neptune.webp" alt="Planet neptune">
                 </router-link>
             </li>

@@ -11,35 +11,35 @@
             <ul id="mobile_nav" class="hide_on_mobile">
               <li>
                 <span id="mercury_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/mercury'" class="nav_links">mercury<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/mercury'" class="nav_links">mercury<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="venus_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/venus'" class="nav_links">venus<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/venus'" class="nav_links">venus<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="earth_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/earth'" class="nav_links">earth<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/earth'" class="nav_links">earth<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="mars_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/mars'" class="nav_links">mars<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/mars'" class="nav_links">mars<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="jupiter_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/jupiter'" class="nav_links">jupiter<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/jupiter'" class="nav_links">jupiter<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="saturn_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/saturne'" class="nav_links">saturne<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/saturne'" class="nav_links">saturne<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="uranus_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/uranus'" class="nav_links">uranus<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/uranus'" class="nav_links">uranus<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
               <li>
                 <span id="neptune_dot" class="hide_on_med_and_up planet_dot"></span>
-                <router-link :to="'/neptune'" class="nav_links">neptune<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
+                <router-link :to="'/planets-fact/neptune'" class="nav_links">neptune<img class="hide_on_med_and_up icon_chevron" src="../assets/images/icon-chevron.svg" alt=""></router-link>
               </li>
             </ul>
           </nav>

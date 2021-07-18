@@ -14,14 +14,14 @@ import Home from '../Pages/Home.vue'
 
 export const routes = [
     { path: '/planets-fact', component: Home, meta: {layout: 'home'} },
-    { path: '/earth', component: Earth },
-    { path: '/jupiter', component: Jupiter },
-    { path: '/mars', component: Mars },
-    { path: '/mercury', component: Mercury },
-    { path: '/neptune', component: Neptune },
-    { path: '/saturne', component: Saturne },
-    { path: '/uranus', component: Uranus },
-    { path: '/venus', component: Venus },
+    { path: '/planets-fact/earth', component: Earth },
+    { path: '/planets-fact/jupiter', component: Jupiter },
+    { path: '/planets-fact/mars', component: Mars },
+    { path: '/planets-fact/mercury', component: Mercury },
+    { path: '/planets-fact/neptune', component: Neptune },
+    { path: '/planets-fact/saturne', component: Saturne },
+    { path: '/planets-fact/uranus', component: Uranus },
+    { path: '/planets-fact/venus', component: Venus },
 ];
 
 const router = createRouter({
