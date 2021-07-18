@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/planets-fact/'
+    publicPath: '/planets-fact/earth'
   }
