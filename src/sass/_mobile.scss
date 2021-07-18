@@ -48,7 +48,7 @@
                         .buttons {width: 100%; position: absolute; top: 68px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 24px; border-bottom: solid 1px $lightGrey}
                         #text {padding-top: 16px}
                         .source {justify-content: center;}
-                        .btn {padding: 20px 0; border: none; position: relative; opacity: 50%;}
+                        .btn {padding: 20px 0; border: none; position: relative; opacity: .5;}
                         .btn:not(:first-child) {margin: 0 0 0 44px}
                         .btn:hover {background: transparent;  opacity: 1}
                         .btn::after, .btn.active::after, #mercury .btn.active::after, #venus .btn.active::after, #earth .btn.active::after, #mars .btn.active::after, #saturn .btn.active::after, #jupiter .btn.active::after, #uranus .btn.active::after, #neptune .btn.active::after {
@@ -144,5 +144,20 @@
                 }
             } 
         }
+        .home_body {
+            .circle-container {
+                @include on-circle($item-count: 8, $circle-size: 320px, $item-size: 90px);
+            }
+        }
     } 
+}
+@media screen and (max-width: 440px) {
+    body {
+        .home_body {
+            .circle-container {
+                @include on-circle($item-count: 8, $circle-size: 280px, $item-size: 70px);
+                h3#title {font-size: 8px; width: 150px !important}
+            }
+        }
+    }
 }

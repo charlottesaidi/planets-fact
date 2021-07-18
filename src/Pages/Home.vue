@@ -59,6 +59,9 @@ export default {
             el.addEventListener('mouseleave', function() {
                 title.innerHTML = 'Explore your solar system and go to...'
             })
+            el.addEventListener('click', function() {
+                title.innerHTML = 'Explore your solar system and go to...'
+            })
         })
     },
 }

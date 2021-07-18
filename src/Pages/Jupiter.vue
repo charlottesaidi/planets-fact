@@ -11,7 +11,7 @@
             <Infos>
                 <h1>{{ jupiter.name }}</h1>
                 <p id="text">{{overview.content}}</p>
-                <p class="source">Source : 
+                <p class="source"><span>Source :</span> 
                     <a id="source" :href="overview.source">Wikipédia</a>
                     <img src="../assets/images/icon-source.svg" alt="Source arrow icon">
                 </p>

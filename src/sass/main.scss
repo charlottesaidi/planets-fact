@@ -455,7 +455,6 @@ body {
         transform: translate(-50%, -50%);
         .circle-container {
             @include on-circle($item-count: 8, $circle-size: 420px, $item-size: 112px); 
-            margin: 100px auto;
             
             li { 
                 display: block; 
@@ -468,9 +467,11 @@ body {
             }
             h3#title {
                 width: 210px !important;
-                left: -23%;
-                top: 45%; 
-                font-weight: 400 !important;
+                height: auto;
+                left: 50%;
+                top: 50%; 
+                transform: translate(-50%, -50%);
+                font-weight: 500 !important;
                 margin: 0;
             }
         }

@@ -480,7 +480,6 @@ body .home_body .circle-container {
   padding: 0;
   border-radius: 50%;
   list-style: none;
-  margin: 100px auto;
 }
 body .home_body .circle-container > * {
   display: block;
@@ -526,9 +525,11 @@ body .home_body .circle-container img {
 }
 body .home_body .circle-container h3#title {
   width: 210px !important;
-  left: -23%;
-  top: 45%;
-  font-weight: 400 !important;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500 !important;
   margin: 0;
 }
 
@@ -853,7 +854,7 @@ body .home_body .circle-container h3#title {
     padding: 20px 0;
     border: none;
     position: relative;
-    opacity: 50%;
+    opacity: 0.5;
   }
   body #app .main .content .section .planet_infos .btn:not(:first-child) {
     margin: 0 0 0 44px;
@@ -1022,6 +1023,94 @@ body .home_body .circle-container h3#title {
   }
   body #app .main #neptune .btn:hover::after, body #app .main #neptune .btn.active::after {
     background-color: #2d68f0;
+  }
+  body .home_body .circle-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+  }
+  body .home_body .circle-container > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    margin: -45px;
+  }
+  body .home_body .circle-container > *:nth-of-type(1) {
+    transform: rotate(0deg) translate(160px) rotate(0deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(2) {
+    transform: rotate(45deg) translate(160px) rotate(-45deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(3) {
+    transform: rotate(90deg) translate(160px) rotate(-90deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(4) {
+    transform: rotate(135deg) translate(160px) rotate(-135deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(5) {
+    transform: rotate(180deg) translate(160px) rotate(-180deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(6) {
+    transform: rotate(225deg) translate(160px) rotate(-225deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(7) {
+    transform: rotate(270deg) translate(160px) rotate(-270deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(8) {
+    transform: rotate(315deg) translate(160px) rotate(-315deg);
+  }
+}
+@media screen and (max-width: 440px) {
+  body .home_body .circle-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+  }
+  body .home_body .circle-container > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin: -35px;
+  }
+  body .home_body .circle-container > *:nth-of-type(1) {
+    transform: rotate(0deg) translate(140px) rotate(0deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(2) {
+    transform: rotate(45deg) translate(140px) rotate(-45deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(3) {
+    transform: rotate(90deg) translate(140px) rotate(-90deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(4) {
+    transform: rotate(135deg) translate(140px) rotate(-135deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(5) {
+    transform: rotate(180deg) translate(140px) rotate(-180deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(6) {
+    transform: rotate(225deg) translate(140px) rotate(-225deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(7) {
+    transform: rotate(270deg) translate(140px) rotate(-270deg);
+  }
+  body .home_body .circle-container > *:nth-of-type(8) {
+    transform: rotate(315deg) translate(140px) rotate(-315deg);
+  }
+  body .home_body .circle-container h3#title {
+    font-size: 8px;
+    width: 150px !important;
   }
 }
 

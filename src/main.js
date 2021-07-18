@@ -20,6 +20,7 @@ app.config.globalProperties.$functions = {
         var internImage = document.getElementById('internal_image');
         var geoImage = document.getElementById('geology_image');
         var source = document.getElementById('source');
+        var anyLinks = document.getElementsByTagName('a');
 
         overviewBtn.addEventListener('click', function() {
             if(description.innerHTML != app.overview.content) {
@@ -54,6 +55,13 @@ app.config.globalProperties.$functions = {
             mainImage.classList.remove("hidden_image")
             internImage.classList.add("hidden_image")
             geoImage.classList.remove("hidden_image") 
+        })
+        anyLinks.forEach(function(el) {
+            el.addEventListener('click', function() {
+                if(!geoImage.classList.contains("hidden_image")) {
+                    geoImage.classList.add("hidden_image")
+                }
+            }) 
         })
     },
     activeBtn() {
