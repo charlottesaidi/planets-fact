@@ -4,7 +4,7 @@
         <DescriptionBody>
             <Image>
                 <!-- JS decides either one image or the other -->
-                <img class="" id="main_image" src="../assets/images/realist_images/planet-uranus.webp" alt="Planet uranus">
+                <img class="" id="main_image" src="../assets/images/planet-uranus.svg" alt="Planet uranus">
                 <img class=" hidden_image" id="internal_image" src="../assets/images/planet-uranus-internal.svg" alt="Planet uranus">
                 <!-- and with or without this one -->
                 <img id="geology_image" class="hidden_image absolute" src="../assets/images/geology-uranus.png" height="199" width="163" alt="Geology of uranus">

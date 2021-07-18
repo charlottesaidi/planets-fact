@@ -3,7 +3,7 @@
         <DescriptionBody>
             <Image>
                 <!-- JS decides either one image or the other -->
-                <img class="" id="main_image" src="../assets/images/realist_images/planet-saturn.webp" alt="Planet saturn">
+                <img class="" id="main_image" src="../assets/images/planet-saturn.svg" alt="Planet saturn">
                 <img class=" hidden_image" id="internal_image" src="../assets/images/planet-saturn-internal.svg" alt="Planet saturn">
                 <!-- and with or without this one -->
                 <img id="geology_image" class="hidden_image absolute" src="../assets/images/geology-saturn.png" height="199" width="163" alt="Geology of saturn">

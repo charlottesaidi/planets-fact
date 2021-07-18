@@ -3,7 +3,7 @@
         <DescriptionBody>
             <Image>
                 <!-- JS decides either one image or the other -->
-                <img class="" id="main_image" src="../assets/images/realist_images/planet-mars.webp" alt="Planet mars">
+                <img class="" id="main_image" src="../assets/images/planet-mars.svg" alt="Planet mars">
                 <img class=" hidden_image" id="internal_image" src="../assets/images/planet-mars-internal.svg" alt="Planet mars">
                 <!-- and with or without this one -->
                 <img id="geology_image" class="hidden_image absolute" src="../assets/images/geology-mars.png" height="199" width="163" alt="Geology of mars">

@@ -108,10 +108,14 @@ a {
 |---------------------------------------------
 */
 html {
-    background: url('../images/realist_images/background-star.webp'); 
+    // background: url('../images/realist_images/background-star.webp'); 
+    background-color: $dark;
+    background-image: url('../images/background-stars.svg');
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center;
 }
 body {
-    // height: 100%;
     font-family: $spartan; 
     font-weight: $regular; 
     font-size: $m; 
