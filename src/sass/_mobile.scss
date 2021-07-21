@@ -48,7 +48,7 @@
                         .buttons {width: 100%; position: absolute; top: 68px; left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 24px; border-bottom: solid 1px $lightGrey}
                         #text {padding-top: 16px}
                         .source {justify-content: center;}
-                        .btn {padding: 20px 0; border: none; position: relative; opacity: .5;}
+                        .btn {padding: 20px 0; height: 50px; border: none; position: relative; opacity: .5;}
                         .btn:not(:first-child) {margin: 0 0 0 44px}
                         .btn:hover {background: transparent;  opacity: 1}
                         .btn::after, .btn.active::after, #mercury .btn.active::after, #venus .btn.active::after, #earth .btn.active::after, #mars .btn.active::after, #saturn .btn.active::after, #jupiter .btn.active::after, #uranus .btn.active::after, #neptune .btn.active::after {
@@ -89,7 +89,7 @@
                     .planet_img #geology_image {width: 80px}
                     .numbers.row {
                         flex-direction: column; margin-top: 28px;
-                        .stats {width: 100%; margin: 0 5px; display: flex; justify-content: space-between; align-items: center; padding: 9px 24px 13px 24px}
+                        .stats {width: 100%; height: 48px; margin: 0 5px; display: flex; justify-content: space-between; align-items: center; padding: 9px 24px 13px 24px}
                         .stats:not(:first-child) {margin-top: 8px}
                     }
                 }

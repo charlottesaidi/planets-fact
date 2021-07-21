@@ -20,11 +20,11 @@
                 .buttons {width: 281px; padding-top: 56px}
                 #text {padding-top: 24px}
                 .source {padding-top: 32px}
-                .btn {padding: 8px 0 7px 20px;}
+                .btn {padding: 8px 0 7px 20px; height: 40px}
             }
             .planet_img #geology_image {width: 100px}
             .numbers {margin-top: 27px; margin-left: -11px;}
-            .stats {width: 164px; padding: 16px 0 19px 15px; border: 1px solid $lightGrey; margin-left: 11px;}
+            .stats {width: 164px; height: 88px; padding: 16px 0 19px 15px; border: 1px solid $lightGrey; margin-left: 11px;}
         }
         #mercury {
             .images {width: 184px; height: 184px;}
