@@ -107,6 +107,15 @@ a {
 | MAIN STYLE
 |---------------------------------------------
 */
+.scale-enter-active,
+.scale-leave-active {
+    transition: all 0.5s ease;
+}
+.scale-enter-from,
+.scale-leave-to {
+    opacity: 0;
+    transform: scale(0.9);
+}
 html {
     background: url('../images/realist_images/background-star.webp'); 
     // background-color: $dark;
@@ -216,6 +225,7 @@ body {
                         align-items: stretch;
                         height: 100%;
                         width: 665px;
+                        transition: all .3s;
                         li {
                             height: 25px;
                             line-height: 25px;
@@ -467,7 +477,7 @@ body {
                 border-radius: 50%;
                 transition: .15s;
             }
-            img {
+            img:not(.home_img_saturne) {
                 width: 100%;
             }
             h3#title {
@@ -479,6 +489,14 @@ body {
                 font-weight: 500 !important;
                 margin: 0;
             }
+        }
+        .home_img_saturne {
+            margin-left: -15%;
+            margin-top: -11%;
+            display: inline-block;
+            width: auto;
+            height: 100px;
+            transform: rotate(190deg);
         }
     } 
 }

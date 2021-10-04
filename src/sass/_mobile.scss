@@ -20,7 +20,7 @@
                         }
                     }
                     nav ul.responsive {
-                        display: block !important; height: auto; width: 100%; z-index: 99; background-color: $dark; position: absolute; top: 68px; left: 0; padding-top: 24px;
+                        display: block !important; height: auto; width: 100%; z-index: 99; background-color: $dark; position: absolute; top: 68px; left: 0; padding-top: 24px; transition: all .3s;
                         li {
                             display: flex; align-items: center; padding: 20px 32px 20px 24px; height: 65px;
                             .planet_dot {height: 20px; width: 20px; border-radius: 50%; }
@@ -148,6 +148,12 @@
             .circle-container {
                 @include on-circle($item-count: 8, $circle-size: 320px, $item-size: 90px);
             }
+            .home_img_saturne {
+                margin-left: -18%;
+                margin-top: -1%;
+                width: auto;
+                height: 90px;
+            }
         }
     } 
 }
@@ -157,6 +163,10 @@
             .circle-container {
                 @include on-circle($item-count: 8, $circle-size: 280px, $item-size: 70px);
                 h3#title {font-size: 8px; width: 150px !important}
+            }
+            .home_img_saturne {
+                width: auto;
+                height: 70px;
             }
         }
     }

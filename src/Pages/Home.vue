@@ -14,7 +14,7 @@
             </li>
             <li class="planets_img">
                 <router-link :to="'/planets-fact/saturne'">
-                    <img src="../assets/images/realist_images/planet-saturn.webp" alt="Planet saturn">
+                    <img src="../assets/images/realist_images/planet-saturn.webp" alt="Planet saturn" class="home_img_saturne">
                 </router-link>
             </li>
             <li class="planets_img">
